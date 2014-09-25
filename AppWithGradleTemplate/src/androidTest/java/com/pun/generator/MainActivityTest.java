@@ -9,13 +9,13 @@ import android.test.ActivityInstrumentationTestCase2;
  * <p/>
  * To run this test, you can type:
  * adb shell am instrument -w \
- * -e class com.pun.generator.MainTest \
+ * -e class com.pun.generator.MainActivityTest \
  * com.pun.generator.tests/android.test.InstrumentationTestRunner
  */
-public class MainTest extends ActivityInstrumentationTestCase2<Main> {
+public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActivity> {
 
-    public MainTest() {
-        super("com.pun.generator", Main.class);
+    public MainActivityTest() {
+        super("com.pun.generator", MainActivity.class);
     }
 
 }

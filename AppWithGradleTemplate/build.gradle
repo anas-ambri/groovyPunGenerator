@@ -1,12 +1,20 @@
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:0.12.2'
+        classpath 'me.champeau.gradle:gradle-groovy-android-plugin:0.3.0'
     }
 }
 apply plugin: 'android'
+apply plugin: 'me.champeau.gradle.groovy-android'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
 
 android {
     compileSdkVersion 'android-19'
@@ -18,4 +26,10 @@ android {
             proguardFile getDefaultProguardFile('proguard-android.txt')
         }
     }
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy:2.4.0-beta-3:grooid'
+    compile ('org.codehaus.groovy:groovy-json:2.4.0-beta-3') {transitive = false}
+    compile 'com.loopj.android:android-async-http:1.4.6'
 }
