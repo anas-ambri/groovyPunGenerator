@@ -11,13 +11,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
         android:id="@+id/pun"
-        android:layout_height="200dp" />
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_height="100dp" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:text="New Pun"
-        android:onClick="newPun"
+        android:text="New Title"
+        android:onClick="newTitle"
         android:textColor="@android:color/white"
         android:textSize="21sp"
         android:layout_alignParentBottom="true"
